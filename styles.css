@@ -111,22 +111,25 @@ header h1 {
   }
 }
 
-
 #scrollTopBtn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: #000000;
+  position: fixed; /* THIS makes it float */
+  bottom: 30px; /* distance from bottom */
+  right: 30px; /* distance from right */
+  background: #ff6262;
   color: #fff;
   border: none;
-  padding: 15px 20px;
-  border-radius: 30%;
-  font-size: 24px;
+  padding: 12px 14px;
+  font-size: 18px;
+  border-radius: 6px; /* small round corners */
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  z-index: 1000;
+  transition: opacity 0.3s, visibility 0.3s, background 0.3s;
+  z-index: 9999; /* very high to float above all content */
+}
+
+#scrollTopBtn:hover {
+  background: #ff0000;
 }
 
 #scrollTopBtn.show {
@@ -134,9 +137,6 @@ header h1 {
   visibility: visible;
 }
 
-#scrollTopBtn:hover {
-  background: #ff0000;
-}
 
 
 .overlay {
@@ -171,30 +171,28 @@ header h1 {
 }
 
 
-body.dark-theme {
-  --body-color: #000000;
-  background-color: var(--body-color);
-  margin: 0;
-  padding: 0;
-}
-
 .oz-image-banner {
-
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .oz-image-wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 4px;
+  align-items: center;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  gap: 20px; /* spacing between logos */
 }
 
 .oz-img {
-
-  width: 200px;
-  height: 100px;
+  width: 160px; /* smaller than before for neat layout */
+  height: auto;
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.oz-img:hover {
+  transform: scale(1.05);
 }
 
 /* Responsive: Stack vertically on smaller screens */
@@ -219,7 +217,7 @@ body.dark-theme {
   font-style: italic;
   color: #999;
   font-size: 1rem;
-  margin-bottom: 20px;
+ 
 }
 
 .about-me {
@@ -230,3 +228,15 @@ body.dark-theme {
   line-height: 1.6;
 }
 
+.page-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 3s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

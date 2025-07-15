@@ -26,7 +26,7 @@ filterButtons.forEach(button => {
 const scrollBtn = document.getElementById('scrollTopBtn');
 
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset > 300) {
+  if (window.pageYOffset > 200) {
     scrollBtn.classList.add('show');
   } else {
     scrollBtn.classList.remove('show');
@@ -36,10 +36,3 @@ window.addEventListener('scroll', () => {
 scrollBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
-
-
-  document.addEventListener("contextmenu", function(e){
-    if(e.target.nodeName === "IMG"){
-      e.preventDefault();
-    }
-  });
