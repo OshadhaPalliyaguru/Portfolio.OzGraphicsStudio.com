@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oz Graphics Studio | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+
+</head>
+<body class="bg-white text-gray-900">
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-red-700 to-black text-white py-20">
+  <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Oz Graphics Studio</h1>
+    <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">We craft stunning social media designs that help restaurants, cafés, and small businesses stand out & grow.</p>
+    <a href="#contact" class="inline-block bg-white text-red-700 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-100 transition">Get a Free Sample</a>
+  </div>
+</section>
+<!-- About Section -->
+<section class="py-20 bg-white">
+  <!-- Logo -->
+  <img src="img/logos/oz studio main logo.png" alt="Oz Studio Logo"
+       class="w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80 h-auto object-contain mb-12 mx-auto">
+
+  <!-- About Content -->
+  <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4">About Us</h2>
+    <p class="max-w-3xl mx-auto text-gray-600 mb-12">
+      Hi, I’m Oshadha — founder of Oz Graphics Studio. I help small businesses turn their ideas into scroll-stopping visuals.
+      Let’s make your brand shine online with posts that get likes, shares, and sales.
+    </p>
+
+    <!-- Client Logos Section -->
+    <div class="mb-2">
+      <h3 class="text-xl font-semibold mb-6">Trusted by awesome brands</h3>
+
+      <div class="flex flex-wrap justify-center gap-6 items-center">
+        <!-- Client Logo 1 -->
+        <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
+          <img src="img/company Logos/appricot .png" alt="Client 1" class="w-full h-auto object-contain">
+        </div>
+        <!-- Client Logo 2 -->
+        <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
+          <img src="img/company Logos/Gevents.png" alt="Client 2" class="w-full h-auto object-contain">
+        </div>
+        <!-- Client Logo 3 -->
+        <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
+          <img src="img/company Logos/mihila.png" alt="Client 3" class="w-full h-auto object-contain">
+        </div>
+        <!-- Client Logo 4 -->
+        <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
+          <img src="img/company Logos/omini.png" alt="Client 4" class="w-full h-auto object-contain">
+        </div>
+
+           <!-- Client Logo 5 -->
+        <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
+          <img src="img/company Logos/studio mi .png" alt="Client 4" class="w-full h-auto object-contain">
+        </div>
+
+           <!-- Client Logo 6 -->
+        <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
+          <img src="img/company Logos/White Color barracuda.png" alt="Client 4" class="w-full h-auto object-contain">
+        </div>
+
+           <!-- Client Logo 7 -->
+        <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
+          <img src="img/company Logos/wings mobile.png" alt="Client 4" class="w-full h-auto object-contain">
+        </div>
+        <!-- Add more logos as needed -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Services Section -->
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-10">What We Do</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+           <img src="img/icons/social-media.png" alt="Department 3" class="h-16 w-auto mx-auto mb-4">
+    
+        <h3 class="text-xl font-semibold mb-4">Social Media Posts</h3>
+        <p>Create eye-catching posts & stories to keep your feed fresh and professional.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+           <img src="img/icons/film-reel.png" alt="Department 3" class="h-16 w-auto mx-auto mb-4">
+    
+        <h3 class="text-xl font-semibold mb-4">Reels & Video Edits</h3>
+        <p>Engaging reels that show off your best dishes, services, or offers — designed to go viral.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+           <img src="img/icons/brand.png" alt="Department 3" class="h-16 w-auto mx-auto mb-4">
+    
+        <h3 class="text-xl font-semibold mb-4">Web Design & Type Settings</h3>
+        <p>Logo, colors, & style — so your brand looks premium everywhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Grid with Image Popup -->
+<section class="py-20" x-data="{ showAll: false, showModal: false, modalImg: '' }">
+  <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-10">Our Work</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      
+      <!-- First 10 images (always visible) -->
+      <template x-for="i in 10" :key="i">
+        <img :src="`img/Our_work_images/${i}.png`"
+             :alt="`Project ${i}`"
+             class="w-full h-full object-cover rounded-xl shadow hover:scale-105 transition cursor-pointer"
+             @click="modalImg = `img/Our_work_images/${i}.png`; showModal = true" />
+      </template>
+
+      <!-- Hidden images (show only if showAll = true) -->
+      <template x-if="showAll">
+        <template x-for="i in [...Array(32).keys()].slice(10)" :key="i">
+          <img :src="`img/Our_work_images/${i + 1}.png`"
+               :alt="`Project ${i + 1}`"
+               class="w-full h-full object-cover rounded-xl shadow hover:scale-105 transition cursor-pointer"
+               @click="modalImg = `img/Our_work_images/${i + 1}.png`; showModal = true" />
+        </template>
+      </template>
+    </div>
+
+    <!-- View More / View Less Button -->
+    <div class="mt-8">
+      <button
+        class="px-6 py-3 bg-red-700 text-white rounded-full font-semibold hover:bg-red-800 transition"
+        @click="showAll = !showAll">
+        <span x-text="showAll ? 'View Less' : 'View More'"></span>
+      </button>
+    </div>
+  </div>
+
+<!-- Image Modal -->
+<div x-show="showModal"
+     x-transition
+     @click.away="showModal = false"
+     class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+  
+  <div class="relative  rounded-xl p-4 max-w-2xl w-full shadow-2xl" @click.stop>
+    <img :src="modalImg"
+         class="w-full h-auto rounded-lg object-contain max-h-[80vh]" />
+    
+    <button @click="showModal = false"
+            class="absolute  right-4 text-white text-3xl font-bold hover:text-red-600 transition">
+      &times;
+    </button>
+  </div>
+</div>
+
+</section>
+
+
+
+<!-- Case Study Section -->
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4">Mini Case Study</h2>
+    <p class="max-w-3xl mx-auto text-gray-600">We helped a local café boost their Instagram reach by 40% in one month with daily custom posts and reels — bringing in more foot traffic & orders. Let’s do the same for your business!</p>
+  </div>
+</section>
+
+<!-- Testimonials Carousel -->
+<section class="py-20 bg-gray-50" data-aos="fade-up">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">What Clients Say</h2>
+
+    <!-- Carousel Wrapper -->
+    <div class="flex overflow-x-auto gap-6 snap-x snap-mandatory pb-4 scroll-smooth">
+      
+      <!-- Testimonial Card -->
+      <div class="flex-shrink-0 snap-start bg-white p-6 rounded-xl shadow w-[90%] sm:w-[60%] md:w-[40%] lg:w-[30%] mx-auto">
+        <p class="text-gray-600 italic mb-4">"Oz Graphics Studio gave our brand a fresh, professional look. Highly recommend!"</p>
+        <p class="font-semibold">— Your Friend’s Café, Colombo</p>
+      </div>
+
+      <!-- Testimonial Card -->
+      <div class="flex-shrink-0 snap-start bg-white p-6 rounded-xl shadow w-[90%] sm:w-[60%] md:w-[40%] lg:w-[30%] mx-auto">
+        <p class="text-gray-600 italic mb-4">"They understood our style perfectly. Smooth workflow, quick delivery."</p>
+        <p class="font-semibold">— Avocado Media, Kandy</p>
+      </div>
+
+      <!-- Testimonial Card -->
+      <div class="flex-shrink-0 snap-start bg-white p-6 rounded-xl shadow w-[90%] sm:w-[60%] md:w-[40%] lg:w-[30%] mx-auto">
+        <p class="text-gray-600 italic mb-4">"Their team is creative and professional. 10/10 for branding and design."</p>
+        <p class="font-semibold">— Luna Fashion, Galle</p>
+      </div>
+
+      <!-- Add more cards if needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Contact CTA -->
+<section id="contact" class="py-20 bg-gradient-to-r from-red-700 to-black text-white text-center" data-aos="fade-up">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-4">Let’s Grow Your Business Together</h2>
+    <p class="mb-6">Contact us today and get your first sample post for free — see the difference yourself!</p>
+    <a href="https://wa.me/94714695753" target="_blank" class="inline-block bg-white text-red-700 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-100 transition">Message on WhatsApp</a>
+  </div>
+</section>
+
+<!-- AOS Animation CDN -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
