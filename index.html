@@ -43,15 +43,15 @@
       <div class="flex flex-wrap justify-center gap-6 items-center">
         <!-- Client Logo 1 -->
         <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
-          <img src="img/company Logos/appricot .png" alt="Client 1" class="w-full h-auto object-contain">
+          <img src="img/company Logos/appricot .webp" alt="Client 1" class="w-full h-auto object-contain">
         </div>
         <!-- Client Logo 2 -->
         <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
-          <img src="img/company Logos/Gevents.png" alt="Client 2" class="w-full h-auto object-contain">
+          <img src="img/company Logos/Gevents.webp" alt="Client 2" class="w-full h-auto object-contain">
         </div>
         <!-- Client Logo 3 -->
         <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
-          <img src="img/company Logos/mihila.png" alt="Client 3" class="w-full h-auto object-contain">
+          <img src="img/company Logos/mihila.webp" alt="Client 3" class="w-full h-auto object-contain">
         </div>
         <!-- Client Logo 4 -->
         <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
@@ -60,17 +60,17 @@
 
            <!-- Client Logo 5 -->
         <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
-          <img src="img/company Logos/studio mi .png" alt="Client 4" class="w-full h-auto object-contain">
+          <img src="img/company Logos/studio mi .webp" alt="Client 4" class="w-full h-auto object-contain">
         </div>
 
            <!-- Client Logo 6 -->
         <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
-          <img src="img/company Logos/White Color barracuda.png" alt="Client 4" class="w-full h-auto object-contain">
+          <img src="img/company Logos/White Color barracuda.webp" alt="Client 4" class="w-full h-auto object-contain">
         </div>
 
            <!-- Client Logo 7 -->
         <div class="w-28 sm:w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out">
-          <img src="img/company Logos/wings mobile.png" alt="Client 4" class="w-full h-auto object-contain">
+          <img src="img/company Logos/wings mobile.webp" alt="Client 4" class="w-full h-auto object-contain">
         </div>
         <!-- Add more logos as needed -->
       </div>
@@ -115,19 +115,19 @@
       
       <!-- First 10 images (always visible) -->
       <template x-for="i in 10" :key="i">
-        <img :src="`img/Our_work_images/${i}.png`"
+        <img :src="`img/Our_work_images/${i}.webp`"
              :alt="`Project ${i}`"
              class="w-full h-full object-cover rounded-xl shadow hover:scale-105 transition cursor-pointer"
-             @click="modalImg = `img/Our_work_images/${i}.png`; showModal = true" />
+             @click="modalImg = `img/Our_work_images/${i}.webp`; showModal = true" />
       </template>
 
       <!-- Hidden images (show only if showAll = true) -->
       <template x-if="showAll">
         <template x-for="i in [...Array(32).keys()].slice(10)" :key="i">
-          <img :src="`img/Our_work_images/${i + 1}.png`"
+          <img :src="`img/Our_work_images/${i + 1}.webp`"
                :alt="`Project ${i + 1}`"
                class="w-full h-full object-cover rounded-xl shadow hover:scale-105 transition cursor-pointer"
-               @click="modalImg = `img/Our_work_images/${i + 1}.png`; showModal = true" />
+               @click="modalImg = `img/Our_work_images/${i + 1}.webp`; showModal = true" />
         </template>
       </template>
     </div>
